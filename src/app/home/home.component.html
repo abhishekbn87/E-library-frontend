@@ -1,0 +1,18 @@
+<div style="text-align: center; margin-top: 2rem">
+  <h1>E-Library</h1>
+  <span style="color: #ff5252; font-size: 20px"
+    >Unlock Your Imagination: Explore the World of eBooks!</span
+  >
+</div>
+<input
+  class="form-control"
+  type="text"
+  placeholder="Search for a book or author"
+  style="width: 20%; float: right; margin-right: 1rem"
+  [(ngModel)]="filterString"
+/>
+<!-- <span>Filtered by : {{ filterString }}</span> -->
+<div>
+  <app-book-carousel></app-book-carousel>
+</div>
+<app-book-list [filterString]="filterString"></app-book-list>

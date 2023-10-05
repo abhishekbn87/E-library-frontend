@@ -1,0 +1,14 @@
+.author-container img {
+  /* background-color: #000;
+  color: white;
+  min-height: 70vh; */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.author-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}

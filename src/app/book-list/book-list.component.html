@@ -1,0 +1,20 @@
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  "
+>
+  <!-- <span>Filtered by: {{ author }}</span> -->
+  <section class="book-container">
+    <article
+      *ngFor="let book of filteredBooks"
+      (click)="onBookClick(book.bookId, book.author)"
+    >
+      <img src="{{ book.bookArt }}" />
+      <p>{{ book.bookName }}</p>
+      <span>{{ book.author }}</span>
+    </article>
+  </section>
+</div>

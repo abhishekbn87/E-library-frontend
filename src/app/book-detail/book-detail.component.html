@@ -1,0 +1,33 @@
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  "
+>
+  <section class="book-detail-container" *ngIf="bookDetail">
+    <div>
+      <img src="{{ bookDetail.bookArt }}" style="height: 400px" />
+      <a
+        type="button"
+        class="btn btn-success"
+        href="{{ bookDetail.downloadLink }}"
+        id="download-img"
+        download
+      >
+        Download eBook
+      </a>
+    </div>
+    <article class="book-details">
+      <span id="book-title">{{ bookDetail.bookName }}</span>
+      <span id="book-author">{{ bookDetail.author }}</span>
+      <p id="book-desc">{{ bookDetail.bookDescription }}</p>
+    </article>
+    <app-author></app-author>
+  </section>
+  <span style="margin-top: 1rem; font-size: 25px"
+    >More by {{ bookDetail?.author }}</span
+  >
+  <app-book-list [author]="bookDetail?.author"></app-book-list>
+</div>

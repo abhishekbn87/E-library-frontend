@@ -1,0 +1,56 @@
+<ngb-carousel style="margin-top: 5rem" [showNavigationArrows]="false">
+  <ng-template ngbSlide *ngFor="let slide of slides">
+    <div
+      class="picsum-img-wrapper"
+      style="
+        height: 35vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <!-- <img
+        [src]="slide.src"
+        alt="Random first slide"
+        style="width: 200px; height: 200px; border-radius: 50%"
+      />
+      <span>quote</span> -->
+      <div class="carousel-inner px-5 pb-4">
+        <!-- Carousel slide-->
+        <div
+          class="carousel-item active"
+          style="display: flex; flex-direction: row"
+        >
+          <div
+            class="media"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              /* justify-content: center; */
+            "
+          >
+            <img
+              id="carousel-img"
+              class="rounded-circle img-thumbnail"
+              src="{{ slide.src }}"
+              alt=""
+            />
+            <div class="media-body ml-5" style="margin-left: 3rem">
+              <blockquote class="blockquote border-0 p-0">
+                <p class="font-italic lead" id="carousel-quote">
+                  <i class="fa fa-quote-left mr-3 text-success"></i
+                  >{{ slide.title }}
+                </p>
+                <footer class="blockquote-footer">
+                  {{ slide.subtitle }}
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>

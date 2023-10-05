@@ -1,0 +1,70 @@
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+body {
+  background: linear-gradient(to left, #51cc48, #39df9c);
+  min-height: 100vh;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.carousel-indicators li {
+  border: none;
+  background: #ccc;
+}
+
+.carousel-indicators li.active {
+  background: #28a745;
+}
+
+#carousel-img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+#carousel-quote {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 1500px) {
+  #carousel-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #carousel-quote {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #carousel-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #carousel-quote {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #carousel-img {
+    width: 225px;
+    height: 225px;
+  }
+  #carousel-quote {
+    font-size: 1.25rem;
+  }
+}

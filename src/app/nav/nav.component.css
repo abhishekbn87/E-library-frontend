@@ -1,0 +1,24 @@
+.library-nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #ff5252;
+  color: white;
+  justify-content: space-between;
+}
+
+.library-nav h4 {
+  padding: 1rem;
+}
+
+.library-nav article {
+  float: right;
+  padding: 5rem;
+}
+
+.library-nav a {
+  text-decoration: underline;
+  font-size: 20px;
+  cursor: pointer;
+  color: white !important;
+}
